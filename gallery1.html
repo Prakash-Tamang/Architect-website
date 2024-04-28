@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#BDBDBD",
+              third: "#F3F3F3"
+            },
+            fontSize: {
+              "heading-1": ["64px", { lineHeight: "64px", fontWeight: 300 }],
+              body: ["16px", { lineHeight: "24px", fontWeight: 300 }],
+              link: ["12px", { lineHeight: "12px", letterSpacing: "2.4px" }],
+              paragraph: ["22px", { lineHeight: "36px", fontWeight: 400 }],
+              "footer-head": ["16px",{fontWeight: 700}],
+              "footer-sub": ["14px",{fontWeight: 500, lineHeight: "24px"}]
+            },
+            fontFamily: {
+              roboto: "'Roboto', sans-serif",
+            },
+            container: {
+              center: true,
+              padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                lg: "4rem",
+                xl: "5rem",
+                "2xl": "6rem",
+              },
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body>
+  <body class="font-roboto">
+    <div class="container">
+      <nav class="flex gap-6">
+        <div class="w-[35%]">Navbar Brand</div>
+        <div class="w-[65%]">
+          <ul class="flex gap-4">
+            <li><a href="index.html">Main</a></li>
+            <li>Gallery</li>
+            <li>Projects</li>
+            <li>Certifications</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="container py-10">
+        <h1 class="text-heading-1 text-gray-500">Photo</h1>
+
+        <h1 class="text-heading-1">Gallery</h1>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5" >
+            <div class="">
+                <img src="images/pic-1.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-2.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-3.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-4.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-5.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-6.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-7.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div>
+                <img src="images/pic-8.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div class="md:col-span-2 lg:col-span-1">
+                <img src="images/pic-9.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+            <div class="md:col-span-2 lg:col-span-1">
+                <img src="images/pic-10.png" alt="" class="w-full max-h-[260px] object-cover">
+            </div>
+        </div>
+    </section>
+  </body> 
+</body>
+</html>
